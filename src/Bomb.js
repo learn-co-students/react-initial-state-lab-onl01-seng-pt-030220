@@ -12,7 +12,7 @@ export default class Bomb extends Component {
 
     render(){
         console.log(this)
-            if (this.state.secondsLeft == 0){
+            if (this.state.secondsLeft <= 0){
                return (<div>Boom!</div>)
             }else{
                 return(
